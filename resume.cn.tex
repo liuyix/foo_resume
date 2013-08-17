@@ -1,0 +1,361 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/Fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+%\setmainfont{Verdana} % Main document font
+\setmainfont{Microsoft YaHei} % Main document font
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: 
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge 刘毅}\bigskip\par} % Your name
+
+%\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+%% \moveleft.5\hoffset\centerline{High Performance Embedded Computing Lab} % Your address
+%% \moveleft.5\hoffset\centerline{Beijing Institute of Technology}
+%% \moveleft.5\hoffset\centerline{(+86) 15652539741}
+%% \moveleft.5\hoffset\centerline{\href {mailto:hi@liuyix.org}{hi@liuyix.org}}
+%% \moveleft.5\hoffset\centerline{ \href {http://liuyix.org}{http://liuyix.org}}
+\centerline{北京理工大学高性能嵌入式计算实验室}
+\centerline {15652539741 | \href {mailto:hi@liuyix.org}{hi@liuyix.org} | \href {http://liuyix.org}{http://liuyix.org} | \href {https://github.com/liuyix}{github.com/liuyix} }
+
+%\section{}
+%\begin{tabular}{rl}
+%\textsc School of Computer Science, Beijing Institute of Technology \\
+%\textsc{Phone:} & +86 15652539741\\
+%\textsc{Website:} & \href {http://liuyix.org}{http://liuyix.org} \\
+%\textsc{Email:} & \href{mailto:hi@liuyix.org}{hi@liuyix.org} \\
+%\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+% \section{Education}
+\section{教育背景}
+
+\begin{tabular}{rl}	
+% \textsc{2011-Present} & M.S. Candidate in \textsc{Computer Science}, \textbf{Beijing Institute of Technology} \\
+%& Research focous: Computer Architecture Evaluation | \small Advisor: Weixing JI\\
+
+\textsc{2011-至今} & 计算机硕士 , \textbf{北京理工大学} \\
+&研究方向: 体系结构评估 | \small 导师: 计卫星\\
+
+&\\
+
+%------------------------------------------------
+
+\textsc{2007-2011} & 计算机科学与技术专业, 学士学位 \textbf{燕山大学}\\
+& 校级三等奖学金, 2009 \\
+& \textsc{GPA}: 3.0/4 \\
+\end{tabular}
+
+\section{学术背景}
+Weixing Ji, \textbf{Yi Liu}, Yuanhong Huo, Yizhuo Wang, and Feng Shi: \textsc{Extracting Threaded Traces in Simulation Environments [C].}  10th IFIP International Conference on Network and Parallel Computing (NPC 2013), Springer (EI收录)
+
+\nopagebreak
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{工程经历}
+\begin{tabular}{r|p{11cm}}
+\emph{至今} &  业余项目, 北京\smallskip\\
+\textsc{2013.2} & \emph{Linux Personal Config Files Backup \& Restore Tool}\\ 
+& \footnotesize{备份和恢复桌面环境配置文件小工具}\\
+\multicolumn{2}{c}{} \\
+%\emph{Current} & 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London \\
+
+\multicolumn{2}{c}{} \\
+\emph{至今} &  \textsc{永安杨风(北京)科技有限公司}, 北京 \smallskip\\
+\textsc{2013.4} & \emph{LBE一键Root三星专版}\\ 
+& \footnotesize{
+永安杨风是国内移动安全产品LBE安全大师所属公司。\linebreak
+LBE一键Root三星专版是近期推出的桌面端主打产品，帮助三星手机用户一键轻松获取Root权限。
+目前工具正在公测，日均使用量4000,成功率达到86\%（2013年7月数据)
+本人入职之初即承担了该项目的研发工作，是目前该项目的唯一全职开发人员。
+\begin{itemize}
+\item Android下的超级用户授权管理的研究和改进（Linux系统编程+Android开发）
+\item 后端自动root脚本实现（Shell+Python）
+\item 垂直网站爬虫实现(Python)
+\item 原有桌面端一键Root工具的重构和修改（QT,lua）
+\end{itemize}
+
+}\smallskip\\
+
+\multicolumn{2}{c}{} \\
+\textsc{2012.8-2013.4} &  \textsc{北京理工大学}, 北京 \smallskip\\
+& \emph{程序trace相似度比较工具}\\ 
+%& \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.} \smallskip \\
+& \footnotesize{
+\begin{itemize}
+\item Linux上开发指令相似度计算工具
+\item 实现应用了编辑距离方法分析两个程序间的指令相似度
+\item 开发了多线程版本的实现
+\end{itemize}
+}\smallskip\\
+& \emph{基于Gem5的多线程程序trace收集实现}\smallskip\\
+& \footnotesize{
+\begin{itemize}
+\item 深入研究了gem5仿真模拟器并独立完成了整个工作
+\item 修改并扩展了gem5以线程的方式生成多个trace输出文件
+% \item Modified and added extension for gem5 simulator to collect instruction trace of multithreading program running on it.
+\end{itemize}
+}\smallskip\\
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\end{tabular}
+\pagebreak
+
+\begin{tabular}{r|p{11cm}}
+\multicolumn{2}{c}{} \\
+& \emph{基于Pin的SPM/Cache混合架构的性能模拟}\\
+& \footnotesize{
+\begin{itemize}
+\item 使用Pin作为模拟器后端用以实时捕获程序执行的指令
+\item 该模拟可以配置为不同大小的SPM与L1, L2级cache的组合，通过测试以找到最优的组合
+\end{itemize}
+}\\
+
+
+%------------------------------------------------
+
+%% \textsc{Jul 2010-Oct 2011} & Summer Intern at \textsc{Intech Inc}, Chicago \emph{}\\
+%% & \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
+%% \multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\multicolumn{2}{c}{} \\
+
+\multicolumn{2}{c}{} \\
+\textsc{2012.3-2012.8} & \textsc{中国软件评测中心}实习生, 北京 \emph{}\smallskip\\
+& \emph{Android Binder 通信过程监听实现}\\
+& \footnotesize{
+%% \begin{itemize}
+%% \item Applied Linux runtime library injection and function redirection techniques on Android platform using my moderate experience of Linux. 
+%% \item Implemented intercepting Android binder IPC after a deep research on Android internal. 
+%% \item Created a product prototype of sms/phonecall filter on Android platform.  
+%% \end{itemize}
+\begin{itemize}
+\item 实现了Android平台上的运行时动态注入库文件以及函数重定向。
+\item 使用了Linux C和汇编语言。
+\item 研究了Android Binder机制并实现程序间活动监听。
+\end{itemize}
+}\\
+& \emph{Android 短信/来电过滤程序原型的实现}\\
+& \footnotesize{
+  \begin{itemize}
+  \item 开发了基于黑白名单以及关键字的短信/来电过滤程序
+  \end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+%% \begin{tabular}{r|p{11cm}}
+%% \textsc{2011年3月-6月} & \textsc{燕山大学}, 秦皇岛 \emph{}\smallskip\\
+%% & \emph{本科毕业设计}\\
+%% %& \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
+%% & \footnotesize{
+%% \begin{itemize}
+%% \item 设计并实现了基于XMPP协议的即时通讯系统
+%% \item 使用了Java SWT框架进行开发
+%% \item 应用了Java Smack开源XMPP库
+%% \end{itemize}
+%%  }\smallskip\\
+%% \multicolumn{2}{c}{} \\
+
+%% \textsc{Mar 2010} & \textsc{Yanshan University}, Qinhuangdao \smallskip\\
+%% & \emph{Programming Contest in Yanshan University}\\
+%% & \footnotesize{
+%% \begin{itemize}
+%% \item Developed an Java application utilizating email space for file storage. 
+%% \item Got 2nd prize overall.
+%% \item Involved Java networking and multithreading.
+%% \end{itemize}
+%% }\\
+%\end{tabular}
+
+%% %----------------------------------------------------------------------------------------
+%% %	SCHOLARSHIPS AND ADDITIONAL INFO
+%% %----------------------------------------------------------------------------------------
+
+%% \section{Scholarships and Certificates}
+
+%% \begin{tabular}{rl}
+%% \textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+
+%% \textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont{Verdana}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%% \end{tabular}
+
+%% %----------------------------------------------------------------------------------------
+%% %	LANGUAGES
+%% %----------------------------------------------------------------------------------------
+
+\section{专业技能和兴趣}
+
+\begin{tabular}{rl}
+编程语言: & \textsc{C}, \textsc{Java}, \textsc{Python}, \textsc{Bash}\\
+编程工具: & \textsc{Emacs}, \textsc{Eclipse}\\
+开发平台: & \textsc{Linux}, \textsc{Android}\\
+英语: & 通过六级等级考试（525/710），擅长读写
+\end{tabular}
+
+
+
+%% \begin{tabular}{rl}
+%% \textsc{Chinese: } & Native\\
+%% \textsc{English: } & CET6 525/710 Good for reading and listening.\\
+
+
+%% \textsc{Italian:} & Mothertongue\\
+
+%% \textsc{French:} & Basic Knowledge\\
+%% \end{tabular}
+
+%% %----------------------------------------------------------------------------------------
+%% %	COMPUTER SKILLS 
+%% %----------------------------------------------------------------------------------------
+
+%% \section{Development Skills}
+
+%% \begin{tabular}{rl}
+%% Programming Language: & \textsc{C}, \textsc{Java}, \textsc{Python}, \textsc{Bash}\setmainfont{Verdana}\\
+%% Programming Tools: & \textsc{Emacs}, \textsc{Eclipse}\\
+%% Development Platform: & \textsc{Linux}, \textsc{Android}
+%% \end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{活动经历}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{2013年1月} & \emph{\textsc{北京理工大学校研究生会}，青春试航部部员} \\
+\textsc{2012年9月} & \footnotesize{
+%\begin{itemize}
+% \item Technology, Open-Source
+% \item Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance 
+参与并协助举办了多个讲座等活动的组织
+% \item 协助完成现场的北京理工大学研究生会，青春试航部门委员
+% \end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+\textsc{2012年12月} & \emph{\textsc{ArchWiki中文翻译组}志愿者}\\
+\textsc{2012年7月} & \footnotesize{参与维护了Archlinux英文维基的中文翻译工作}
+
+\end{tabular}
+%----------------------------------------------------------------------------------------
+
+%% \newpage
+
+%% %----------------------------------------------------------------------------------------
+%% %	GRADE TABLES
+%% %----------------------------------------------------------------------------------------
+
+%% \par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+
+%% \begin{center}
+%% \begin{tabular}{lcc}
+%% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%% Corporate Finance (Valuation) & 25 & 6\\
+%% Financial Statement Analysis & 28 & 6\\
+%% Statistics & 27 & 6\\
+%% Theory of Finance & 26 & 6\\
+%% Quantitative Methods for Finance & 30 & 6\\
+%% Econometrics & 24 & 6\\
+%% Derivatives & 31 & 6\\
+%% Management of Financial and Insurance Companies & 30 & 6\\
+%% Business Law & 31 & 6\\
+%% Investment Banking	& 28 & 6\\ \\		
+%% Behavioral Models for Economics and Finance	 & 29 & 6\\
+%% Numerical Methods for Finance & 29 & 6\\
+%% Advanced Derivatives & 30 & 6\\
+%% Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%% English Language & 30 &	4\\
+%% French Language & 31 &	4\\	
+%% Internship & & 8\\		
+%% Final Thesis & & 20\\	
+%% & Total & 120\\\cline{2-3}
+%% &\textsc{Gpa}&\textbf{8.0}
+%% \end{tabular}
+%% \end{center}
+%% \bigskip
+%% \hrule
+%% \bigskip
+
+%% %------------------------------------------------
+
+%% \bigskip
+
+%% \par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+
+%% \begin{center}
+%% \begin{tabular}{lcc}
+%% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%% \hline
+%% Corporate Financial Strategy & A & 4\\
+%% Derivatives & A & 4\\
+%% Money, Credit, and Banking & A & 4\\
+%% Business Strategy & A- & 3.5\\
+%% & &\\\cline{2-3}
+%% & \textsc{Gpa} & \textbf{3.875}
+%% \end{tabular}
+%% \end{center}
+
+%% %----------------------------------------------------------------------------------------
+
+\end{document}
